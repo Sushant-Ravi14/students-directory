@@ -59,33 +59,16 @@ export default async function DepartmentSlugPage({ params }: Props) {
 
           {/* Department Overview Banner */}
           <section className="mt-6 rounded-xl border border-[#1e293b] bg-[#101726] p-6 shadow-xl sm:p-8">
-            <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-start">
-              <div>
-                <span className="rounded border border-blue-500/30 bg-blue-500/10 px-2.5 py-1 text-xs font-semibold text-blue-300">
-                  Academic Faculty
-                </span>
-                <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  {department.name}
-                </h1>
-                <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-300">
-                  {department.description}
-                </p>
-              </div>
-
-              <div className="flex shrink-0 flex-col gap-2 rounded-lg border border-[#23314d] bg-[#0c1220] p-4 text-xs font-medium text-slate-300 sm:text-right">
-                <div>
-                  <span className="text-slate-500">Curriculum Cycle: </span>
-                  <span className="text-slate-200">2024–2025</span>
-                </div>
-                <div>
-                  <span className="text-slate-500">Track Offerings: </span>
-                  <span className="text-blue-400">{deptSpecializations.length} Specializations</span>
-                </div>
-                <div>
-                  <span className="text-slate-500">Total Enrolled: </span>
-                  <span className="text-emerald-400">{deptStudents.length} Students</span>
-                </div>
-              </div>
+            <div>
+              <span className="rounded border border-blue-500/30 bg-blue-500/10 px-2.5 py-1 text-xs font-semibold text-blue-300">
+                Academic Faculty
+              </span>
+              <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                {department.name}
+              </h1>
+              <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-300">
+                {department.description}
+              </p>
             </div>
           </section>
 

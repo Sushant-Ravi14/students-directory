@@ -6,20 +6,13 @@ export default function DepartmentsPage() {
     <div className="flex min-h-[calc(100vh-65px)] flex-col bg-[#090d16]">
       <main className="mx-auto w-full max-w-4xl flex-1 px-6 py-12">
         {/* Header */}
-        <header className="flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
-          <div>
-            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Departments
-            </h1>
-            <p className="mt-2 text-base text-slate-400">
-              Explore academic faculties, programs, and enrolled students.
-            </p>
-          </div>
-
-          <div className="flex shrink-0 items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3.5 py-1.5 text-xs font-semibold text-blue-300">
-            <span className="h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
-            <span>{departments.length} Active Academic Faculties</span>
-          </div>
+        <header>
+          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Departments
+          </h1>
+          <p className="mt-2 text-base text-slate-400">
+            Explore academic faculties, programs, and enrolled students.
+          </p>
         </header>
 
         <hr className="my-8 border-[#1e293b]" />
